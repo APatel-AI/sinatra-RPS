@@ -1,1 +1,25 @@
 <h1>We Played Paper !</h1>
+<h2>
+  They played <%= @computer_move %>
+</h2>
+
+<% if @outcome == "won" %>
+
+  <h2>
+
+    We <%= @outcome %>!
+
+  </h2>
+
+<% elsif @outcome == "lost" %>
+
+  <h2> We <%= @outcome %> </h2>
+
+<% else %>
+
+  <h2>
+    We <%= @outcome %>
+  </h2>
+
+<% end %>
+<a href = "/">Rules</a>

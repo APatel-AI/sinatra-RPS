@@ -4,9 +4,25 @@
     <title>Sinatra RPS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+    <style>
+      #shapes{
+       list-style-type: none;
+       padding: 0;
+       margin: 0;
+      }
+    </style>
   </head>
 
   <body>
+   <section>
+      <ul id="shapes">
+        <li><a href='/rock'>Play Rock</a></li>
+        <li><a href='/paper'>Play Paper</a></li>
+        <li><a href='/scissors'>Play Scissors</a></li>
+      </ul>
+    </section>
 
     <%= yield %>
 
